@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Ex17 {
+public class Ex017 {
              public static void main(String[] args){
     Scanner leia = new Scanner(System.in);
     System.out.println("Informe o valor do produto: ");

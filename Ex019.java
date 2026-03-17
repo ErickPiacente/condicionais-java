@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Ex19 {
+public class Ex019 {
     //Esse aqui eu tentei fazer mas eu não consegui achar uma solução, espero aprender depois
              public static void main(String[] args){
     Scanner leia = new Scanner(System.in);

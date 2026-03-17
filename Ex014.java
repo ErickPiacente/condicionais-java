@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Ex14 {
+public class Ex014 {
                  public static void main(String[] args){
     Scanner leia = new Scanner(System.in);
     System.out.println("Informe o primeiro numero: ");

@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Ex8 {
+public class Ex08 {
              public static void main(String[] args){
     Scanner leia = new Scanner(System.in);
     System.out.println("Informe o seu peso: ");

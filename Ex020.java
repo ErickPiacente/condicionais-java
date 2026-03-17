@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Ex20 {
+public class Ex020 {
              public static void main(String[] args){
     Scanner leia = new Scanner(System.in);
         System.out.println("1--Pedra");

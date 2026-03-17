@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Ex3 {
+public class Ex03 {
          public static void main(String[] args){
     Scanner leia = new Scanner(System.in);
     System.out.println("Informe a sua nota: ");

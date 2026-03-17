@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Ex5 {
+public class Ex05 {
     public static void main(String[] args){
         Scanner leia = new Scanner(System.in);
         System.out.println("1---SOMA");

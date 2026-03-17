@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Ex10 {
+public class Ex010 {
              public static void main(String[] args){
     Scanner leia = new Scanner(System.in);
     System.out.println("Informe um numero: ");

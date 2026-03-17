@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Ex13 {
+public class Ex013 {
        public static void main(String[] args){
         Scanner leia = new Scanner(System.in);
 
