@@ -54,8 +54,42 @@ do{
         char linha = leia.next().charAt(0);
         System.out.println("Informe a coluna da cadeira");
         int coluna = leia.nextInt();
-        linha = (char)(linha - 'A');
+        int linhaInt = linha - '0';
+        linhaInt = (linha - 'A') + 1;
+
+
         coluna = coluna - 1;
+
+
+            
+           System.out.println("Quer continuar o programa? digite 1 se quiser continuar;\nSe quiser sair digite qualquer numero: ");
+        enquanto = leia.nextInt();
+    }while(enquanto == 1);
+    break;
+    case 2:
+    do{ 
+
+          System.out.println("Sala 2-- Sala de TCC");
+          System.out.println("  1      2      3      4      5      6      7      8      9     10     11     12");
+
+
+        for (int i = 0; i < matriz[1].length; i++) {
+            System.out.print((char) ('A' + i)+"  ");
+            for (int j = 0; j < matriz[1][i].length; j++) {
+
+
+
+                System.out.print("["+matriz[1][i][j]+"]" + "   ");
+
+
+            }
+            System.out.println();
+            
+
+
+
+        }
+
 
             
            System.out.println("Quer continuar o programa? digite 1 se quiser continuar;\nSe quiser sair digite qualquer numero: ");
