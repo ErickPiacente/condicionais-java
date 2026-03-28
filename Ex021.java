@@ -50,15 +50,145 @@ do{
 
 
         }
-        System.out.println("Informe a linha da cadeira");
+        System.out.println("MENU DE OPERAÇÔES!");
+        System.out.println("1--Reservar cadeira");
+        System.out.println("2--Comprar cadeira");
+        System.out.println("3--Cancelar reserva");
+        System.out.println("Informe se quer reservar ou comprar uma cadeira");
+        int opcao2 = leia.nextInt();
+        int valorIngresso = 20;
+        switch(opcao2){
+            case 1:
+        System.out.println("Você escolheu reservar uma cadeira");        
+        System.out.println("Informe a linha da cadeira(em maisculo)");
         char linha = leia.next().charAt(0);
         System.out.println("Informe a coluna da cadeira");
         int coluna = leia.nextInt();
-        int linhaInt = linha - '0';
-        linhaInt = (linha - 'A') + 1;
+        int linhaInt = linha - 'A';
+        linhaInt = (linha - 'A');
 
 
         coluna = coluna - 1;
+        if(linhaInt <= 12 && coluna <= 12 || linhaInt >= 1 && coluna >= 1){
+        if(matriz[0][linhaInt][coluna] == 'L'){
+        matriz[0][linhaInt][coluna] = 'R';
+                  System.out.println("Sala 1-- Sala Cientifica");
+          System.out.println("  1      2      3      4      5      6      7      8      9     10     11     12");
+
+
+        for (int i = 0; i < matriz[0].length; i++) {
+            System.out.print((char) ('A' + i)+"  ");
+            for (int j = 0; j < matriz[0][i].length; j++) {
+
+
+         
+                System.out.print("["+matriz[0][i][j]+"]" + "   ");
+
+
+            }
+            
+            System.out.println();
+            
+
+
+
+        }
+        System.out.println("O valor pago pela reserva é de "+ (valorIngresso - 10));
+    }
+}
+    else{
+        System.out.println("O lugar já está reservado/ocupado, por favor escolha outro");
+    }
+    break;
+    case 2:
+        System.out.println("Você escolheu comprar uma cadeira");
+        System.out.println("Informe a linha da cadeira(em maisculo)");
+        linha = leia.next().charAt(0);
+        System.out.println("Informe a coluna da cadeira");
+        coluna = leia.nextInt();
+        linhaInt = linha - 'A';
+        linhaInt = (linha - 'A');
+
+
+        coluna = coluna - 1;
+        if(linhaInt <= 12 && coluna <= 12 || linhaInt >= 1 && coluna >= 1){
+        if(matriz[0][linhaInt][coluna] == 'L'){
+        matriz[0][linhaInt][coluna] = 'C';
+                  System.out.println("Sala 1-- Sala Cientifica");
+          System.out.println("  1      2      3      4      5      6      7      8      9     10     11     12");
+
+
+        for (int i = 0; i < matriz[0].length; i++) {
+            System.out.print((char) ('A' + i)+"  ");
+            for (int j = 0; j < matriz[0][i].length; j++) {
+
+
+            
+                System.out.print("["+matriz[0][i][j]+"]" + "   ");
+
+
+            }
+            
+            System.out.println();
+            
+
+
+
+        }
+        System.out.println("O valor pago pela compra do lugar é de "+ (valorIngresso));
+    }
+}
+    else{
+        System.out.println("O lugar já está reservado/ocupado, por favor escolha outro");
+    }
+
+
+
+
+    break;
+    case 3:
+                System.out.println("Você escolheu cancelar sua reserva");        
+        System.out.println("Informe a linha da cadeira(em maisculo)");
+        linha = leia.next().charAt(0);
+        System.out.println("Informe a coluna da cadeira");
+        coluna = leia.nextInt();
+        linhaInt = linha - 'A';
+        linhaInt = (linha - 'A');
+
+
+        coluna = coluna - 1;
+        if(linhaInt <= 12 && coluna <= 12 || linhaInt >= 1 && coluna >= 1){
+        if(matriz[0][linhaInt][coluna] == 'R'){
+        matriz[0][linhaInt][coluna] = 'L';
+                  System.out.println("Sala 1-- Sala Cientifica");
+          System.out.println("  1      2      3      4      5      6      7      8      9     10     11     12");
+
+
+        for (int i = 0; i < matriz[0].length; i++) {
+            System.out.print((char) ('A' + i)+"  ");
+            for (int j = 0; j < matriz[0][i].length; j++) {
+
+
+         
+                System.out.print("["+matriz[0][i][j]+"]" + "   ");
+
+
+            }
+            
+            System.out.println();
+            
+
+
+
+        }
+        System.out.println("O valor de rembolso é: "+ (valorIngresso - 10));
+    }
+}
+    else{
+        System.out.println("O lugar foi comprado ou está livre, só é possivel reembolsar lugares reservados");
+    }
+        break;
+        }
 
 
             
