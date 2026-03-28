@@ -28,7 +28,11 @@ public class Ex021{
       case 1:
 int enquanto;
 
+
 do{ 
+int contador = 0;
+int contadorReserva = 0;
+int contadorComprado = 0;
 
           System.out.println("Sala 1-- Sala Cientifica");
           System.out.println("  1      2      3      4      5      6      7      8      9     10     11     12");
@@ -50,6 +54,36 @@ do{
 
 
         }
+        for(int i = 0; i < matriz[0].length; i++){
+            for(int j = 0; j < matriz[0][i].length; j++){
+                if(matriz[0][i][j] == 'L'){
+                    contador++;
+                }
+
+            }
+        }
+    System.out.print("Cadeiras livres: "+ contador);
+
+        for(int i = 0; i < matriz[0].length; i++){
+            for(int j = 0; j < matriz[0][i].length; j++){
+                if(matriz[0][i][j] == 'R'){
+                    contadorReserva++;
+                }
+
+            }
+        }
+    System.out.print("\tCadeiras reservadas: "+ contadorReserva);
+
+        for(int i = 0; i < matriz[0].length; i++){
+            for(int j = 0; j < matriz[0][i].length; j++){
+                if(matriz[0][i][j] == 'C'){
+                    contadorComprado++;
+                }
+
+            }
+        }
+    System.out.println("\tCadeiras compradas: "+ contadorComprado);
+
         System.out.println("MENU DE OPERAÇÔES!");
         System.out.println("1--Reservar cadeira");
         System.out.println("2--Comprar cadeira");
