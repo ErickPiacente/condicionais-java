@@ -1,6 +1,17 @@
 import java.util.Scanner;
 public class Ex021{
    public static void main(String[] args){ 
+    Ex22 obj = new Ex22();
+    obj.executar();
+
+            Scanner leia = new Scanner(System.in);
+            System.out.println("-----MENU PRINCIPAL-----");
+            System.out.println("1-- TEATRO");
+            System.out.println("2-- MENU DE EXERCICIOS");
+            System.out.println("Escolha entre essas duas opções: ");
+            int menuPrincipal = leia.nextInt();
+            switch (menuPrincipal) {
+                case 1:
          char[][][] matriz = new char[8][12][12];
       for(int m = 0; m < matriz.length; m++){
 
@@ -9,7 +20,10 @@ public class Ex021{
             for (int j = 0; j < matriz[m][i].length; j++) {
                 matriz[m][i][j] = 'L';
             }}}
-    Scanner leia = new Scanner(System.in);
+
+                    
+
+    
         System.out.println("----------------MENU DE SALAS----------------");
 System.out.println("1 - Sala Científica | Espetáculo: Viagem Pelo Universo");
 System.out.println("2 - Sala Acadêmica | Espetáculo: Apresentação de projetos");
@@ -309,9 +323,15 @@ else{
 
 
 
-
-
-
+leia.close();
+break;
+case 2:
+    obj.executar();
+    break;
+    default:
+        System.out.println("Opção invalida");
+        break;
+            }
 
     }
 
@@ -321,7 +341,62 @@ else{
 
     
 
-}   
+}
+
+class Ex22{
+    String[] titulos = new String[20];
+    String[] enunciados = new String[20];
+    public void executar(){
+        System.out.println("Menu inicializado");
+    titulos[0] = "Par e impar";
+    enunciados[0] = "sla";
+    titulos[1] = "Par e impar";
+    enunciados[1] = "sla";
+    titulos[2] = "Par e impar";
+    enunciados[2] = "sla";
+    titulos[3] = "Par e impar";
+    enunciados[3] = "sla";
+    titulos[4] = "Par e impar";
+    enunciados[4] = "sla";
+    titulos[5] = "Par e impar";
+    enunciados[5] = "sla";
+    titulos[6] = "Par e impar";
+    enunciados[6] = "sla";
+    titulos[7] = "Par e impar";
+    enunciados[7] = "sla";
+    titulos[8] = "Par e impar";
+    enunciados[8] = "sla";
+    titulos[9] = "Par e impar";
+    enunciados[9] = "sla";
+    titulos[10] = "Par e impar";
+    enunciados[10] = "sla";
+    titulos[11] = "Par e impar";
+    enunciados[11] = "sla";
+    titulos[12] = "Par e impar";
+    enunciados[12] = "sla";
+    titulos[13] = "Par e impar";
+    enunciados[13] = "sla";
+    titulos[14] = "Par e impar";
+    enunciados[14] = "sla";
+    titulos[15] = "Par e impar";
+    enunciados[15] = "sla";
+    titulos[16] = "Par e impar";
+    enunciados[16] = "sla";
+    titulos[17] = "Par e impar";
+    enunciados[17] = "sla";
+    titulos[18] = "Par e impar";
+    enunciados[18] = "sla";
+    titulos[19] = "Par e impar";
+    enunciados[19] = "sla";
+    
+
+
+    System.out.println(titulos[0]);
+    }
+    
+
+}
+
 
 
 
